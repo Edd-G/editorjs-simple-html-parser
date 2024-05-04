@@ -344,7 +344,7 @@ class Parser
 
         $img = $this->dom->createElement('img');
 
-        $img->setAttribute('src', $block->data->url);
+        $img->setAttribute('src', $block->data->file->url);
         $img->setAttribute('alt', $caption);
         
         $figure->appendChild($img);
